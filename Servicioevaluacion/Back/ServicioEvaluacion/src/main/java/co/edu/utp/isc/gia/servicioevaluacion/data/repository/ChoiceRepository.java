@@ -5,13 +5,13 @@
  */
 package co.edu.utp.isc.gia.servicioevaluacion.data.repository;
 
-import co.edu.utp.isc.gia.servicioevaluacion.data.entity.Option;
+import co.edu.utp.isc.gia.servicioevaluacion.data.entity.Choice;
 import org.springframework.data.repository.CrudRepository;
 
 /**
  *
  * @author Michael
  */
-public interface OptionRepository extends CrudRepository<Option, Long>{
+public interface ChoiceRepository extends CrudRepository<Choice, Long>{
     
 }

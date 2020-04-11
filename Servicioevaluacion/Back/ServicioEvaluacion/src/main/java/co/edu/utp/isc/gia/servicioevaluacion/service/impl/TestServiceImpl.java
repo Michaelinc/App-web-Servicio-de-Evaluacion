@@ -3,36 +3,36 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package co.edu.utp.isc.gia.servicioevaluacion.service.inter;
+package co.edu.utp.isc.gia.servicioevaluacion.service.impl;
 
-import co.edu.utp.isc.gia.servicioevaluacion.data.entity.Professor;
+import co.edu.utp.isc.gia.servicioevaluacion.service.inter.BaseServiceInterface;
 import java.util.List;
 
 
-public class ProfesssorServiceImpl implements BaseServiceInterface<Professor, Long> {
+public class TestServiceImpl<Type, Key> implements BaseServiceInterface<Type, Key> {
 
     @Override
-    public Professor save(Professor object) {
+    public Type save(Type object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Professor get(Long id) {
+    public Type get(Key id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public List<Professor> getAll() {
+    public List<Type> getAll() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Boolean delete(Long id) {
+    public Boolean delete(Key id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Professor update(Long id, Professor object) {
+    public Type update(Key id, Type object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

@@ -5,14 +5,14 @@
  */
 package co.edu.utp.isc.gia.servicioevaluacion.data.entity.Question;
 
-import co.edu.utp.isc.gia.servicioevaluacion.data.entity.Option;
-import co.edu.utp.isc.gia.servicioevaluacion.data.entity.Question.QuestionType;
-import co.edu.utp.isc.gia.servicioevaluacion.data.entity.Solution;
+import co.edu.utp.isc.gia.servicioevaluacion.data.entity.Choice;
 import co.edu.utp.isc.gia.servicioevaluacion.data.entity.Test;
 import java.io.Serializable;
 import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
@@ -36,12 +36,13 @@ import lombok.NoArgsConstructor;
 public class UniQuestion extends QuestionType implements Serializable{
     
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @OneToMany(cascade = CascadeType.ALL)
-    private List<Option> option;
+    private List<Choice> Choice;
     @OneToOne
-    private Option correctAnswer;
+    private Choice correctAnswer;
     @ManyToOne
-    private Solution solution;
+    private Test test;
     
 }

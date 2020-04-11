@@ -5,14 +5,16 @@
  */
 package co.edu.utp.isc.gia.servicioevaluacion.data.entity.Answer;
 
-import co.edu.utp.isc.gia.servicioevaluacion.data.entity.Option;
+import co.edu.utp.isc.gia.servicioevaluacion.data.entity.Choice;
 import co.edu.utp.isc.gia.servicioevaluacion.data.entity.Solution;
 import java.io.Serializable;
 import java.util.List;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -32,9 +34,10 @@ import lombok.NoArgsConstructor;
 public class MultiAnswer extends AnswerType implements Serializable{
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @OneToOne
-    private List<Option> chosenAnswers;
+    @OneToMany
+    private List<Choice> chosenAnswer;
     @ManyToOne
     private Solution solution;
 }
