@@ -11,10 +11,10 @@ import co.edu.utp.isc.gia.servicioevaluacion.web.dto.Question.MultiQuestionDTO;
 import java.util.List;
 
 
-public class MultiQuestionServiceImpl implements BaseServiceInterface<MultiQuestion, Long, MultiQuestionDTO> {
+public class MultiQuestionServiceImpl implements BaseServiceInterface<MultiQuestionDTO, Long> {
 
     @Override
-    public MultiQuestionDTO save(MultiQuestion object) {
+    public MultiQuestionDTO save(MultiQuestionDTO object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -34,7 +34,7 @@ public class MultiQuestionServiceImpl implements BaseServiceInterface<MultiQuest
     }
 
     @Override
-    public MultiQuestionDTO update(Long id, MultiQuestion object) {
+    public MultiQuestionDTO update(Long id, MultiQuestionDTO object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

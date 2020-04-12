@@ -11,10 +11,10 @@ import co.edu.utp.isc.gia.servicioevaluacion.web.dto.SolutionDTO;
 import java.util.List;
 
 
-public class SolutionServiceImpl implements BaseServiceInterface<Solution, Long, SolutionDTO> {
+public class SolutionServiceImpl implements BaseServiceInterface<SolutionDTO, Long> {
 
     @Override
-    public SolutionDTO save(Solution object) {
+    public SolutionDTO save(SolutionDTO object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -34,7 +34,7 @@ public class SolutionServiceImpl implements BaseServiceInterface<Solution, Long,
     }
 
     @Override
-    public SolutionDTO update(Long id, Solution object) {
+    public SolutionDTO update(Long id, SolutionDTO object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

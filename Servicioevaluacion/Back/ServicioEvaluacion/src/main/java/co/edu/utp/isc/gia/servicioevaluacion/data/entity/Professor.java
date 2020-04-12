@@ -32,11 +32,8 @@ import lombok.NoArgsConstructor;
 public class Professor implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private String identificationType;
-    private String identification;
     private String email;
     @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
     private List<Test> test;

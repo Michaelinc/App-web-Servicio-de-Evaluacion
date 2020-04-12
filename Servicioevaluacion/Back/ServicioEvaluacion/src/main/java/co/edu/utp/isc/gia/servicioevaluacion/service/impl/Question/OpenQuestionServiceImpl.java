@@ -11,10 +11,10 @@ import co.edu.utp.isc.gia.servicioevaluacion.web.dto.Question.OpenQuestionDTO;
 import java.util.List;
 
 
-public class OpenQuestionServiceImpl implements BaseServiceInterface<OpenQuestion, Long, OpenQuestionDTO> {
+public class OpenQuestionServiceImpl implements BaseServiceInterface<OpenQuestionDTO, Long> {
 
     @Override
-    public OpenQuestionDTO save(OpenQuestion object) {
+    public OpenQuestionDTO save(OpenQuestionDTO object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -34,7 +34,7 @@ public class OpenQuestionServiceImpl implements BaseServiceInterface<OpenQuestio
     }
 
     @Override
-    public OpenQuestionDTO update(Long id, OpenQuestion object) {
+    public OpenQuestionDTO update(Long id, OpenQuestionDTO object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

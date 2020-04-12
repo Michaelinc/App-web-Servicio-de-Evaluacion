@@ -11,10 +11,10 @@ import co.edu.utp.isc.gia.servicioevaluacion.service.inter.BaseServiceInterface;
 import java.util.List;
 
 
-public class OpenAnswerServiceImpl implements BaseServiceInterface<OpenAnswer, Long, OpenAnswerDTO> {
+public class OpenAnswerServiceImpl implements BaseServiceInterface<OpenAnswerDTO, Long> {
 
     @Override
-    public OpenAnswerDTO save(OpenAnswer object) {
+    public OpenAnswerDTO save(OpenAnswerDTO object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -34,7 +34,7 @@ public class OpenAnswerServiceImpl implements BaseServiceInterface<OpenAnswer, L
     }
 
     @Override
-    public OpenAnswerDTO update(Long id, OpenAnswer object) {
+    public OpenAnswerDTO update(Long id, OpenAnswerDTO object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
