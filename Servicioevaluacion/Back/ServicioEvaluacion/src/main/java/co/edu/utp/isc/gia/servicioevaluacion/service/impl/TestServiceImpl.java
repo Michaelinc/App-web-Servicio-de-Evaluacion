@@ -8,12 +8,13 @@ package co.edu.utp.isc.gia.servicioevaluacion.service.impl;
 import co.edu.utp.isc.gia.servicioevaluacion.data.entity.Test;
 import co.edu.utp.isc.gia.servicioevaluacion.data.repository.TestRepository;
 import co.edu.utp.isc.gia.servicioevaluacion.service.inter.BaseServiceInterface;
+import co.edu.utp.isc.gia.servicioevaluacion.web.dto.TestDTO;
 import java.util.List;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
-public class TestServiceImpl implements BaseServiceInterface<Test, Long> {
+public class TestServiceImpl implements BaseServiceInterface<Test, Long, TestDTO> {
 
     @Autowired
     TestRepository testRepository;
@@ -27,17 +28,17 @@ public class TestServiceImpl implements BaseServiceInterface<Test, Long> {
     }
      
     @Override
-    public Test save(Test object) {
+    public TestDTO save(Test object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Test get(Long id) {
+    public TestDTO get(Long id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public List<Test> getAll() {
+    public List<TestDTO> getAll() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -47,7 +48,7 @@ public class TestServiceImpl implements BaseServiceInterface<Test, Long> {
     }
 
     @Override
-    public Test update(Long id, Test object) {
+    public TestDTO update(Long id, Test object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
    

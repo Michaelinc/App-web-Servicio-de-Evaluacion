@@ -5,9 +5,9 @@
  */
 package co.edu.utp.isc.gia.servicioevaluacion.web.dto;
 
-import co.edu.utp.isc.gia.servicioevaluacion.data.entity.Answer.MultiAnswer;
-import co.edu.utp.isc.gia.servicioevaluacion.data.entity.Answer.OpenAnswer;
-import co.edu.utp.isc.gia.servicioevaluacion.data.entity.Answer.UniAnswer;
+import co.edu.utp.isc.gia.servicioevaluacion.data.entity.Answer.OpenAnswerDTO;
+import co.edu.utp.isc.gia.servicioevaluacion.web.dto.Answer.MultiAnswerDTO;
+import co.edu.utp.isc.gia.servicioevaluacion.web.dto.Answer.UniAnswerDTO;
 import java.io.Serializable;
 import java.util.List;
 import lombok.AllArgsConstructor;
@@ -26,9 +26,7 @@ public class SolutionDTO implements Serializable {
     private Long id;
     private String studentName;
     private String studentId;
-    private List<UniAnswer> uniAnswers;
-    private List<MultiAnswer> multiAnswers;
-    private List<OpenAnswer> openAnswers;
-    
-    
+    private List<UniAnswerDTO> uniAnswers;
+    private List<MultiAnswerDTO> multiAnswers;
+    private List<OpenAnswerDTO> openAnswers;  
 }

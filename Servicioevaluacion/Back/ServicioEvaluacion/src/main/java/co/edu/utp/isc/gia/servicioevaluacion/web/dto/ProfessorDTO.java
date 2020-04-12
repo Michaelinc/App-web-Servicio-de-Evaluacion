@@ -25,5 +25,5 @@ public class ProfessorDTO implements Serializable {
     private String identificationType;
     private String identification;
     private String email;
-    private List<Test> test;
+    private List<TestDTO> test;
 }
