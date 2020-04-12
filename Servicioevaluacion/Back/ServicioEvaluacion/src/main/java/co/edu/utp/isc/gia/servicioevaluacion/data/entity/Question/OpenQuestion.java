@@ -33,7 +33,5 @@ public class OpenQuestion extends QuestionType implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @ManyToOne
-    private Test test;
     
 }

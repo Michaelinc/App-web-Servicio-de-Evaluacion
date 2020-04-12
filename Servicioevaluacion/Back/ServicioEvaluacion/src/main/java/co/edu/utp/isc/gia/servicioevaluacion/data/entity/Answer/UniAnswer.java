@@ -37,7 +37,5 @@ public class UniAnswer extends AnswerType implements Serializable{
     private Long id;
     @OneToOne
     private Choice chosenAnswer;
-    @ManyToOne
-    private Solution solution;
     
 }

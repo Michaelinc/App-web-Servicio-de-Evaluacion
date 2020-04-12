@@ -6,24 +6,47 @@
 package co.edu.utp.isc.gia.servicioevaluacion.service.impl;
 
 import co.edu.utp.isc.gia.servicioevaluacion.data.entity.Choice;
+import co.edu.utp.isc.gia.servicioevaluacion.data.repository.ChoiceRepository;
+import co.edu.utp.isc.gia.servicioevaluacion.exceptions.responses.BadRequestException;
+import co.edu.utp.isc.gia.servicioevaluacion.exceptions.responses.InvalidParameterException;
 import co.edu.utp.isc.gia.servicioevaluacion.service.inter.BaseServiceInterface;
+import co.edu.utp.isc.gia.servicioevaluacion.web.dto.ChoiceDTO;
 import java.util.List;
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 
 
-public class ChoiceServiceImpl implements BaseServiceInterface<Choice, Long> {
+public class ChoiceServiceImpl implements BaseServiceInterface<Choice, Long, ChoiceDTO> {
+
+    @Autowired
+    ChoiceRepository choiceRepository;
+
+    @Autowired
+    ModelMapper mapper;
+
+    public ChoiceServiceImpl(ChoiceRepository choiceRepository, ModelMapper mapper) {
+        this.choiceRepository = choiceRepository;
+        this.mapper = mapper;
+    }
+    
+    @Override
+    public ChoiceDTO save(Choice object) {
+        if(object == null){
+            throw new BadRequestException("Peticion sin cuerpo");
+        }else if(object.getDescription() == null){
+            throw new InvalidParameterException("Informacion incompleta, verifique que los campos esten completamente llenos!");
+        }
+        
+        return mapper.map(choiceRepository.save(object),ChoiceDTO.class);
+    }
 
     @Override
-    public Choice save(Choice object) {
+    public ChoiceDTO get(Long id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Choice get(Long id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public List<Choice> getAll() {
+    public List<ChoiceDTO> getAll() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -33,7 +56,7 @@ public class ChoiceServiceImpl implements BaseServiceInterface<Choice, Long> {
     }
 
     @Override
-    public Choice update(Long id, Choice object) {
+    public ChoiceDTO update(Long id, Choice object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

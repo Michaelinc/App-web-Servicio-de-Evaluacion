@@ -38,6 +38,6 @@ public class Professor implements Serializable {
     private String identificationType;
     private String identification;
     private String email;
-    @OneToMany(cascade = CascadeType.REMOVE,fetch = FetchType.LAZY)
+    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
     private List<Test> test;
 }

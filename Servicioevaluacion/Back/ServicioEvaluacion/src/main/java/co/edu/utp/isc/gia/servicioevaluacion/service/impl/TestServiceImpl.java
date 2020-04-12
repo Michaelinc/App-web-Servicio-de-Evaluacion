@@ -5,35 +5,51 @@
  */
 package co.edu.utp.isc.gia.servicioevaluacion.service.impl;
 
+import co.edu.utp.isc.gia.servicioevaluacion.data.entity.Test;
+import co.edu.utp.isc.gia.servicioevaluacion.data.repository.TestRepository;
 import co.edu.utp.isc.gia.servicioevaluacion.service.inter.BaseServiceInterface;
 import java.util.List;
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 
 
-public class TestServiceImpl<Type, Key> implements BaseServiceInterface<Type, Key> {
+public class TestServiceImpl implements BaseServiceInterface<Test, Long> {
 
+    @Autowired
+    TestRepository testRepository;
+    
+    @Autowired
+    ModelMapper mapper;
+
+    public TestServiceImpl(TestRepository testRepository, ModelMapper mapper) {
+        this.testRepository = testRepository;
+        this.mapper = mapper;
+    }
+     
     @Override
-    public Type save(Type object) {
+    public Test save(Test object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Type get(Key id) {
+    public Test get(Long id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public List<Type> getAll() {
+    public List<Test> getAll() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Boolean delete(Key id) {
+    public Boolean delete(Long id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Type update(Key id, Type object) {
+    public Test update(Long id, Test object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+   
     
 }

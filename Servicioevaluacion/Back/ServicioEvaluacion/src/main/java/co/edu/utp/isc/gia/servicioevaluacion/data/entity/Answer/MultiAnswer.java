@@ -38,6 +38,4 @@ public class MultiAnswer extends AnswerType implements Serializable{
     private Long id;
     @OneToMany
     private List<Choice> chosenAnswer;
-    @ManyToOne
-    private Solution solution;
 }

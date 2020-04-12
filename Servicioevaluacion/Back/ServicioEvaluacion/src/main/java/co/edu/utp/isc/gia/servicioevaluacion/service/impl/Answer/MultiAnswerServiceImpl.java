@@ -7,23 +7,24 @@ package co.edu.utp.isc.gia.servicioevaluacion.service.impl.Answer;
 
 import co.edu.utp.isc.gia.servicioevaluacion.data.entity.Answer.MultiAnswer;
 import co.edu.utp.isc.gia.servicioevaluacion.service.inter.BaseServiceInterface;
+import co.edu.utp.isc.gia.servicioevaluacion.web.dto.Answer.MultiAnswerDTO;
 import java.util.List;
 
 
-public class MultiAnswerServiceImpl implements BaseServiceInterface<MultiAnswer, Long> {
+public class MultiAnswerServiceImpl implements BaseServiceInterface<MultiAnswer, Long, MultiAnswerDTO> {
 
     @Override
-    public MultiAnswer save(MultiAnswer object) {
+    public MultiAnswerDTO save(MultiAnswer object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public MultiAnswer get(Long id) {
+    public MultiAnswerDTO get(Long id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public List<MultiAnswer> getAll() {
+    public List<MultiAnswerDTO> getAll() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -33,7 +34,7 @@ public class MultiAnswerServiceImpl implements BaseServiceInterface<MultiAnswer,
     }
 
     @Override
-    public MultiAnswer update(Long id, MultiAnswer object) {
+    public MultiAnswerDTO update(Long id, MultiAnswer object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

@@ -7,23 +7,24 @@ package co.edu.utp.isc.gia.servicioevaluacion.service.impl.Question;
 
 import co.edu.utp.isc.gia.servicioevaluacion.data.entity.Question.OpenQuestion;
 import co.edu.utp.isc.gia.servicioevaluacion.service.inter.BaseServiceInterface;
+import co.edu.utp.isc.gia.servicioevaluacion.web.dto.Question.OpenQuestionDTO;
 import java.util.List;
 
 
-public class OpenQuestionServiceImpl<Type, Key> implements BaseServiceInterface<OpenQuestion, Long> {
+public class OpenQuestionServiceImpl implements BaseServiceInterface<OpenQuestion, Long, OpenQuestionDTO> {
 
     @Override
-    public OpenQuestion save(OpenQuestion object) {
+    public OpenQuestionDTO save(OpenQuestion object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public OpenQuestion get(Long id) {
+    public OpenQuestionDTO get(Long id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public List<OpenQuestion> getAll() {
+    public List<OpenQuestionDTO> getAll() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -33,7 +34,7 @@ public class OpenQuestionServiceImpl<Type, Key> implements BaseServiceInterface<
     }
 
     @Override
-    public OpenQuestion update(Long id, OpenQuestion object) {
+    public OpenQuestionDTO update(Long id, OpenQuestion object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

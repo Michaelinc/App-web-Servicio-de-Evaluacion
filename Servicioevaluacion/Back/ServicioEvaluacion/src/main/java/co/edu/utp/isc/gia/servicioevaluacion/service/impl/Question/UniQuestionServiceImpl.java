@@ -7,23 +7,24 @@ package co.edu.utp.isc.gia.servicioevaluacion.service.impl.Question;
 
 import co.edu.utp.isc.gia.servicioevaluacion.data.entity.Question.UniQuestion;
 import co.edu.utp.isc.gia.servicioevaluacion.service.inter.BaseServiceInterface;
+import co.edu.utp.isc.gia.servicioevaluacion.web.dto.Question.UniQuestionDTO;
 import java.util.List;
 
 
-public class UniQuestionServiceImpl implements BaseServiceInterface<UniQuestion, Long> {
+public class UniQuestionServiceImpl implements BaseServiceInterface<UniQuestion, Long, UniQuestionDTO> {
 
     @Override
-    public UniQuestion save(UniQuestion object) {
+    public UniQuestionDTO save(UniQuestion object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public UniQuestion get(Long id) {
+    public UniQuestionDTO get(Long id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public List<UniQuestion> getAll() {
+    public List<UniQuestionDTO> getAll() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -33,7 +34,7 @@ public class UniQuestionServiceImpl implements BaseServiceInterface<UniQuestion,
     }
 
     @Override
-    public UniQuestion update(Long id, UniQuestion object) {
+    public UniQuestionDTO update(Long id, UniQuestion object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

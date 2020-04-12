@@ -42,7 +42,5 @@ public class UniQuestion extends QuestionType implements Serializable{
     private List<Choice> Choice;
     @OneToOne
     private Choice correctAnswer;
-    @ManyToOne
-    private Test test;
     
 }

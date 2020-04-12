@@ -6,24 +6,25 @@
 package co.edu.utp.isc.gia.servicioevaluacion.service.impl.Answer;
 
 import co.edu.utp.isc.gia.servicioevaluacion.data.entity.Answer.OpenAnswer;
+import co.edu.utp.isc.gia.servicioevaluacion.data.entity.Answer.OpenAnswerDTO;
 import co.edu.utp.isc.gia.servicioevaluacion.service.inter.BaseServiceInterface;
 import java.util.List;
 
 
-public class OpenAnswerServiceImpl implements BaseServiceInterface<OpenAnswer, Long> {
+public class OpenAnswerServiceImpl implements BaseServiceInterface<OpenAnswer, Long, OpenAnswerDTO> {
 
     @Override
-    public OpenAnswer save(OpenAnswer object) {
+    public OpenAnswerDTO save(OpenAnswer object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public OpenAnswer get(Long id) {
+    public OpenAnswerDTO get(Long id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public List<OpenAnswer> getAll() {
+    public List<OpenAnswerDTO> getAll() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -33,7 +34,7 @@ public class OpenAnswerServiceImpl implements BaseServiceInterface<OpenAnswer, L
     }
 
     @Override
-    public OpenAnswer update(Long id, OpenAnswer object) {
+    public OpenAnswerDTO update(Long id, OpenAnswer object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

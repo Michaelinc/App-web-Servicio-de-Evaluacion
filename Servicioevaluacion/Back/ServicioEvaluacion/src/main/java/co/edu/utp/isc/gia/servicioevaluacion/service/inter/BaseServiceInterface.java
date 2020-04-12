@@ -12,15 +12,13 @@ import java.util.List;
  * @author Michael
  * @param <Type>
  * @param <Key>
+ * @param <TypeReturn>
  */
-public interface BaseServiceInterface <Type,Key>{
+public interface BaseServiceInterface <Type,Key,TypeReturn>{
     
-    Type save(Type object);
-    Type get(Key id);
-    List<Type> getAll();
+    TypeReturn save(Type object);
+    TypeReturn get(Key id);
+    List<TypeReturn> getAll();
     Boolean delete(Key id);
-    Type update(Key id, Type object);
-    
-    
-    
+    TypeReturn update(Key id, Type object);
 }

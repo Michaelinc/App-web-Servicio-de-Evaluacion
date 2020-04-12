@@ -41,7 +41,5 @@ public class MultiQuestion extends QuestionType implements Serializable{
     private List<Choice> Choice;
     @OneToMany
     private List<Choice> correctAnswer;
-    @ManyToOne
-    private Test test;
     
 }

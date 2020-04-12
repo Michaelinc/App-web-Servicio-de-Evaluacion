@@ -7,23 +7,24 @@ package co.edu.utp.isc.gia.servicioevaluacion.service.impl;
 
 import co.edu.utp.isc.gia.servicioevaluacion.data.entity.Professor;
 import co.edu.utp.isc.gia.servicioevaluacion.service.inter.BaseServiceInterface;
+import co.edu.utp.isc.gia.servicioevaluacion.web.dto.ProfessorDTO;
 import java.util.List;
 
 
-public class ProfesssorServiceImpl implements BaseServiceInterface<Professor, Long> {
+public class ProfesssorServiceImpl implements BaseServiceInterface<Professor, Long, ProfessorDTO> {
 
     @Override
-    public Professor save(Professor object) {
+    public ProfessorDTO save(Professor object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Professor get(Long id) {
+    public ProfessorDTO get(Long id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public List<Professor> getAll() {
+    public List<ProfessorDTO> getAll() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -33,7 +34,7 @@ public class ProfesssorServiceImpl implements BaseServiceInterface<Professor, Lo
     }
 
     @Override
-    public Professor update(Long id, Professor object) {
+    public ProfessorDTO update(Long id, Professor object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
