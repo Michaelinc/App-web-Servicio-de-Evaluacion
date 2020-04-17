@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package co.edu.utp.isc.gia.servicioevaluacion.data.entity.Answer;
+package co.edu.utp.isc.gia.servicioevaluacion.web.dto.Answer;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

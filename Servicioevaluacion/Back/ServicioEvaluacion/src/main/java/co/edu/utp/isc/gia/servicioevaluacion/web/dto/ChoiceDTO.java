@@ -21,5 +21,6 @@ public class ChoiceDTO implements Serializable {
 
     private Long id;
     private String description;
+    private String status;
     
 }

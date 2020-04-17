@@ -5,7 +5,7 @@
  */
 package co.edu.utp.isc.gia.servicioevaluacion.web.dto;
 
-import co.edu.utp.isc.gia.servicioevaluacion.data.entity.Answer.OpenAnswerDTO;
+import co.edu.utp.isc.gia.servicioevaluacion.web.dto.Answer.OpenAnswerDTO;
 import co.edu.utp.isc.gia.servicioevaluacion.web.dto.Answer.MultiAnswerDTO;
 import co.edu.utp.isc.gia.servicioevaluacion.web.dto.Answer.UniAnswerDTO;
 import java.io.Serializable;

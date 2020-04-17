@@ -5,7 +5,7 @@
  */
 package co.edu.utp.isc.gia.servicioevaluacion.web.dto.Question;
 
-import co.edu.utp.isc.gia.servicioevaluacion.data.entity.Choice;
+import co.edu.utp.isc.gia.servicioevaluacion.web.dto.ChoiceDTO;
 import java.io.Serializable;
 import java.util.List;
 import lombok.AllArgsConstructor;
@@ -24,6 +24,6 @@ import lombok.NoArgsConstructor;
 public class UniQuestionDTO extends QuestionTypeDTO implements Serializable{
 
     private Long id;
-    private List<Choice> Choice;
-    private Choice correctAnswer;  
+    private List<ChoiceDTO> choice;
+    //private ChoiceDTO correctAnswer;  
 }

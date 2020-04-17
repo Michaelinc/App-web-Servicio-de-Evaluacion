@@ -29,5 +29,6 @@ public class Choice implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String description;
+    private String status;
     
 }

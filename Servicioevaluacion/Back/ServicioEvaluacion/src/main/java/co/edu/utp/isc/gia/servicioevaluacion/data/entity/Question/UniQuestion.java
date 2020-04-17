@@ -39,8 +39,8 @@ public class UniQuestion extends QuestionType implements Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @OneToMany(cascade = CascadeType.ALL)
-    private List<Choice> Choice;
-    @OneToOne
-    private Choice correctAnswer;
+    private List<Choice> choice;
+    //@OneToOne
+    //private Choice correctAnswer;
     
 }

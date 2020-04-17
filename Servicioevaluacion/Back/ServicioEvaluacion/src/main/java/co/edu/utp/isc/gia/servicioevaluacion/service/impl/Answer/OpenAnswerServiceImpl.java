@@ -6,7 +6,7 @@
 package co.edu.utp.isc.gia.servicioevaluacion.service.impl.Answer;
 
 import co.edu.utp.isc.gia.servicioevaluacion.data.entity.Answer.OpenAnswer;
-import co.edu.utp.isc.gia.servicioevaluacion.data.entity.Answer.OpenAnswerDTO;
+import co.edu.utp.isc.gia.servicioevaluacion.web.dto.Answer.OpenAnswerDTO;
 import co.edu.utp.isc.gia.servicioevaluacion.service.inter.BaseServiceInterface;
 import java.util.List;
 
